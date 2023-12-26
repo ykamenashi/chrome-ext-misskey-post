@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "author": "",
-    "homepage_url": "https://example.com",
+    "author": "ykamenashi",
+    "homepage_url": "https://github.com/ykamenashi/chrome-ext-misskey-post",
     "name": "Misskey Share Button",
     "description": "Misskey Share Button.",
     "version": "1.0",
