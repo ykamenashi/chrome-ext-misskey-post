@@ -20,10 +20,12 @@
     "permissions": [
         "tabs",
         "scripting",
-        "background"
+        "storage",
+        "contextMenus"
     ],
     "host_permissions": [
         "http://*/*",
         "https://*/*"
-    ]
+    ],
+    "options_page": "config_panel.html"
 }
