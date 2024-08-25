@@ -6,10 +6,9 @@ chrome.action.onClicked.addListener((tab)=>{
                 message: "PostToMisskey",
                 domain: misskey_domain
         });
-
     });
     rtnPromise
-        .then((res)=>{
+        .then(()=>{
         })
         .catch((err)=>{
         })

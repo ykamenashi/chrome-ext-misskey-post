@@ -1,9 +1,9 @@
 {
     "manifest_version": 3,
-    "author": "ykamenashi",
+    "author": "yuutarou KAMENASHI",
     "homepage_url": "https://github.com/ykamenashi/chrome-ext-misskey-post",
     "name": "Misskey Share Button",
-    "description": "Misskey Share Button.",
+    "description": "one-click Misskey Share Button without API key.",
     "version": "1.0",
     "icons": {
         "32": "icon_32.png",
@@ -18,15 +18,13 @@
         "default_title": "Post to Misskey"
     },
     "permissions": [
+        "activeTab",
         "tabs",
         "scripting",
         "storage",
         "contextMenus"
     ],
-    "host_permissions": [
-        "http://*/*",
-        "https://*/*"
-    ],
+    "host_permissions": [ ],
     "options_page": "config_panel.html",
     "content_scripts": [
         {
