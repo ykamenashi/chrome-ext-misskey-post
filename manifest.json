@@ -19,19 +19,8 @@
     },
     "permissions": [
         "activeTab",
-        "tabs",
         "scripting",
-        "storage",
-        "contextMenus"
+        "storage"
     ],
-    "host_permissions": [ ],
-    "options_page": "config_panel.html",
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": [
-                "script.js"
-            ]
-        }
-    ]
+    "options_page": "config_panel.html"
 }
