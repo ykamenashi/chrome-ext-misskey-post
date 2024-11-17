@@ -17,8 +17,13 @@ chrome.action.onClicked.addListener( async (tab)=>{
 const injectedFunc = (domain)=>{
     const s = screen;
     const e = encodeURIComponent;
+    let sel = '';
+    if( document.getSelection().toString().length != 0){
+        sel = `> ${document.getSelection().toString()}` + "%0A%0A";
+    }
     window.open(
         "https://"+ domain +"/share?text="+
+        sel +
         e(document.title)+" "+e(location.href),
         "_blank",
         "width=550,height=420,left="+

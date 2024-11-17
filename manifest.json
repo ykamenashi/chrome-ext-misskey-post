@@ -4,7 +4,7 @@
     "homepage_url": "https://github.com/ykamenashi/chrome-ext-misskey-post",
     "name": "Misskey Share Button",
     "description": "one-click Misskey Share Button without API key.",
-    "version": "2.0",
+    "version": "2.1",
     "icons": {
         "32": "icon_32.png",
         "48": "icon_48.png",
