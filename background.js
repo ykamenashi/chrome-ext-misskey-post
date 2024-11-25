@@ -19,11 +19,11 @@ const injectedFunc = (domain)=>{
     const e = encodeURIComponent;
     let sel = '';
     if( document.getSelection().toString().length != 0){
-        sel = `> ${document.getSelection().toString()}` + "%0A%0A";
+        sel = `> ${document.getSelection().toString()}`;
     }
     window.open(
         "https://"+ domain +"/share?text="+
-        sel +
+        e(sel)  + "%0A%0A" +
         e(document.title)+" "+e(location.href),
         "_blank",
         "width=550,height=420,left="+
